@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; connect-src 'self'; img-src 'self' data:; base-uri 'none'; form-action 'none'; object-src 'none'">
+  <meta name="theme-color" content="#6bcab8">
+  <title>穩步 10 · Android 下載</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="download.js" defer></script>
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar"><a class="brand" href="./" aria-label="穩步 10 下載首頁"><span class="brand-mark" aria-hidden="true">↗</span>穩步 <span class="light">10</span></a><span class="pill">Android · 測試版</span></header>
+    <div class="layout">
+      <section class="intro" aria-labelledby="page-title">
+        <span class="eyebrow">留一點時間，練得更穩。</span>
+        <h1 id="page-title">把你的練習，<br>裝進手機。</h1>
+        <p class="lead">穩步 10 的 Android 安裝檔。輸入另行收到的下載密碼，在這台裝置解鎖檔案。</p>
+        <ul class="features"><li>課表離線可用</li><li>訓練紀錄只保存在本機</li><li>無須登入帳戶</li></ul>
+        <div class="practice-mark" aria-hidden="true"><span></span><span></span><span></span></div>
+      </section>
+      <section class="download-card" aria-labelledby="download-title">
+        <span class="eyebrow muted">私人分享 · 指定測試者</span>
+        <h2 id="download-title">取得 Android App</h2>
+        <p id="release-info" class="muted small">正在讀取版本資訊…</p>
+        <form id="unlock-form">
+          <label for="download-password">下載密碼</label>
+          <div class="password-field"><input id="download-password" type="password" autocomplete="off" autocapitalize="off" spellcheck="false" required aria-describedby="password-help" disabled><button type="button" id="toggle-password" class="toggle" aria-pressed="false" aria-controls="download-password" disabled>顯示</button></div>
+          <p id="password-help" class="muted small">貼上完整密碼即可。密碼用於本機解密，不會傳送到伺服器。</p>
+          <button type="submit" id="unlock-button" class="button" disabled>解鎖安裝檔 <span aria-hidden="true">↗</span></button>
+        </form>
+        <p id="download-status" class="status" role="status" aria-live="polite" aria-atomic="true">正在準備下載…</p>
+        <a id="download-link" class="button lime" hidden>下載 APK 安裝檔 <span aria-hidden="true">↓</span></a>
+        <button id="lock-button" class="text-button" type="button" hidden>清除已解鎖檔案</button>
+        <details id="integrity-details" hidden><summary>檔案核對資料</summary><p class="small muted">下載完成後，可用以下 SHA-256 核對檔案；頁面已在解密後自動核對。</p><code id="file-sha256"></code></details>
+        <noscript><p class="status error">需要開啟 JavaScript 才能在本機解密安裝檔。</p></noscript>
+      </section>
+    </div>
+    <section class="install-card" aria-labelledby="install-title">
+      <h2 id="install-title">下載後怎樣安裝</h2>
+      <ol><li>請使用 <strong>Android 手機或平板</strong>開啟本頁。iPhone 無法安裝 APK。</li><li>解鎖後按「下載 APK 安裝檔」，再開啟下載的檔案。</li><li>若系統要求，暫時允許你使用的瀏覽器／檔案管理員「安裝未知應用程式」，再按安裝。只安裝你確認來源的檔案；完成後可關閉這項權限。</li><li>開啟「穩步 10」，在 App 內設定練習時段及通知權限。實際提醒可能受手機省電設定影響。</li></ol>
+      <p class="small muted">這是直接提供的測試版，並非 Google Play 版本，沒有宣稱經 Google 審查。裝置相容性與提醒效果仍需實際試用；清除 App 資料或移除 App 前，請先匯出訓練紀錄。</p>
+    </section>
+    <footer><p>安裝檔經加密後提供下載。持有密碼的人都可以解鎖，也可以轉傳解鎖後的 APK；請只向指定測試者分享密碼。</p><p>下載頁不使用第三方分析、字型或腳本。此頁需 HTTPS 或 localhost 才能進行安全解密。</p></footer>
+  </main>
+</body>
+</html>

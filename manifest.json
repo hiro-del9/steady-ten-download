@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "appName": "穩步 10",
+  "appVersion": "0.3.1",
+  "minAndroid": "7.0",
+  "fileName": "steady-ten-0.3.1.apk",
+  "size": 3379994,
+  "sha256": "33c8b8cb2ba164e7e7fc4b52e2b4631131a51f9ce47fbcde593630aaa7b7c448",
+  "encryptedFile": "steady-ten-0.3.1.apk.enc",
+  "encryptedSize": 3380010,
+  "encryption": {
+    "algorithm": "AES-256-GCM",
+    "kdf": "PBKDF2-HMAC-SHA256",
+    "iterations": 310000,
+    "salt": "VLCKqVHmjJlAJpNFkRfb5w",
+    "iv": "IsI8AYPp5kSi1Qz8",
+    "tagLength": 128
+  }
+}
