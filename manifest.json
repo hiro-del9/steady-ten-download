@@ -12,8 +12,8 @@
     "algorithm": "AES-256-GCM",
     "kdf": "PBKDF2-HMAC-SHA256",
     "iterations": 310000,
-    "salt": "VLCKqVHmjJlAJpNFkRfb5w",
-    "iv": "IsI8AYPp5kSi1Qz8",
+    "salt": "XzRyErVfg1T5CTEmssSERQ",
+    "iv": "xF4fqeyqzkWPAk29",
     "tagLength": 128
   }
 }
